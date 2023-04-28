@@ -3,3 +3,88 @@
   margin: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: "Jost", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 400;
+}
+/* HEADER  */
+header .navbar-brand {
+  font-size: 30px;
+  font-weight: bold;
+  color: #189a46;
+}
+#navbarNav ul li {
+  margin: 0 10px;
+}
+#navbarNav ul li .active {
+  color: #189a46;
+}
+#navbarNav ul li a {
+  color: #000;
+  line-height: 70px;
+  font-size: 1.2rem;
+}
+#navbarNav > ul > li > a {
+  position: relative;
+  padding: 0;
+  margin-right: 10px;
+}
+#navbarNav > ul > li > a::before {
+  content: "";
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #189a46;
+  opacity: 0;
+  transition: all 0.5s;
+}
+#navbarNav > ul > li:hover > a::before {
+  width: 100%;
+  opacity: 1;
+  color: #189a46;
+}
+#navbarNav > ul > li > a:hover {
+  color: #189a46;
+  transition: all 0.5s;
+}
+#navbarNav > ul > li > a {
+  position: relative;
+  padding: 0;
+  margin-right: 10px;
+}
+#navbarNav > ul > li > ul > li > a {
+  position: relative;
+  padding: 0;
+  margin-right: 10px;
+}
+#navbarNav ul > li > ul > li > a::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #189a46;
+  opacity: 0;
+  transition: all 0.5s;
+}
+#navbarNav ul > li > ul > li > a:hover::before {
+  width: 100%;
+  opacity: 1;
+  color: #189a46;
+}
+#navbarNav ul > li > ul > li > a:hover {
+  color: #189a46;
+  transition: all 0.5s;
+  opacity: 1;
+  background-color: white;
+}
+header .dropdown-item {
+  display: inline;
+  width: 100%;
+  overflow: hidden;
+}
