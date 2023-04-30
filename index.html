@@ -8,7 +8,6 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-
     <!-- Bootstrap CSS v5.2.1 -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
@@ -68,12 +67,12 @@
     <!-- aos animate  -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
-  <body>
+  <body id="myBody">
     <header>
       <div class="container">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#">Pooch Care</a>
+            <a class="navbar-brand" href="#">Pooch Care </a>
             <button
               class="navbar-toggler"
               type="button"
@@ -125,6 +124,19 @@
                   <a class="nav-link" href="#">Contact</a>
                 </li>
               </ul>
+              <div class="icon_search">
+                <a onclick="display1()" class="nav-link" href="#"
+                  ><i class="fa-solid fa-magnifying-glass"></i
+                ></a>
+              </div>
+              <div class="sun_moon">
+                <i
+                  id="moonOn"
+                  class="fa-regular fa-moon"
+                  onclick="moonOn()"
+                ></i>
+                <i id="sunOn" class="fa-regular fa-sun" onclick="sunOn()"></i>
+              </div>
             </div>
           </div>
         </nav>
@@ -132,7 +144,9 @@
     </header>
 
     <main>
-      <section class="banner"></section>
+      <section class="banner">
+        <a href="" onclick="darkBody()">123</a>
+      </section>
       <section class="about"></section>
       <section class="product"></section>
       <section class="choose"></section>
@@ -142,8 +156,27 @@
       <section class="test"></section>
       <section class="update"></section>
       <section class="sidebar"></section>
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
     </main>
-
+    <!--  modal -->
+    <div id="modal_1" class="modal_nodisplay">
+      <div class="modal_box">
+        <a class="modal_close" onclick="display2()" href="#">X</a>
+        <nav class="navbar bg-body-tertiary">
+          <div class="container-fluid m-0 p-0">
+            <form class="d-flex" role="search">
+              <input
+                class="form-control"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn_search" type="submit">Search</button>
+            </form>
+          </div>
+        </nav>
+      </div>
+    </div>
     <footer></footer>
 
     <!-- Bootstrap JavaScript Libraries -->

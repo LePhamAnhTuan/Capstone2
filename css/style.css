@@ -9,12 +9,67 @@ body {
   line-height: 1.5;
   font-weight: 400;
 }
+#modal_1 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+.modal_display {
+  display: block !important ;
+}
+.modal_nodisplay {
+  display: none;
+}
+#modal_1 .modal_close {
+  text-decoration: none;
+  display: block;
+  color: #fff;
+  opacity: 0.7;
+  font-size: 20px;
+  text-align: right;
+  font-weight: bolder;
+}
+#modal_1 .modal_box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+#modal_1 .modal_btn {
+  border: none;
+  background: rgba(0, 0, 0, 0.1);
+  border: none;
+}
+#modal_1 input {
+  border-radius: 10px 0 0 10px;
+  height: 50px;
+  width: 400px;
+}
+#modal_1 .btn_search {
+  color: #fff;
+  background-color: rgb(24, 154, 70, 0.9);
+  border-radius: 0 10px 10px 0;
+  border: none;
+  width: 100px;
+}
+#modal_1 .btn_search:hover {
+  color: #fff;
+  background-color: #189a46;
+}
 /* HEADER  */
 header .navbar-brand {
   font-size: 30px;
   font-weight: bold;
   color: #189a46;
 }
+header .navbar-brand:hover {
+  color: #189a46;
+}
+
 #navbarNav ul li {
   margin: 0 10px;
 }
@@ -87,4 +142,50 @@ header .dropdown-item {
   display: inline;
   width: 100%;
   overflow: hidden;
+}
+header .icon_search {
+  height: 40px;
+  width: 40px;
+  color: #189a46;
+  background-color: #f9f7fe;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 15px;
+}
+header .icon_search a {
+  padding: 12px;
+}
+header .icon_search:hover {
+  color: #f9f7fe;
+  background-color: #189a46;
+  transition: all 0.2s;
+}
+/* SUN MOON  */
+.sun_moon {
+  width: 50px;
+  padding: 0 15px;
+}
+.sun_moon i {
+  font-size: 25px;
+}
+
+#sunOn {
+  display: none;
+}
+#moonOn {
+  display: block;
+}
+.display_block {
+  display: block !important;
+}
+.display_none {
+  display: none !important;
+}
+/* dark & light  */
+.darkBody#myBody {
+  color: #fff;
+  background-color: #404040;
 }
