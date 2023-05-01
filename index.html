@@ -67,7 +67,7 @@
     <!-- aos animate  -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
-  <body id="myBody">
+  <body id="myBody" class="bg-body">
     <header>
       <div class="container">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -129,7 +129,7 @@
                   ><i class="fa-solid fa-magnifying-glass"></i
                 ></a>
               </div>
-              <div class="sun_moon">
+              <div class="sun_moon" onclick="darkBody()">
                 <i
                   id="moonOn"
                   class="fa-regular fa-moon"
@@ -145,10 +145,161 @@
 
     <main>
       <section class="banner">
-        <a href="" onclick="darkBody()">123</a>
+        <div class="multiple-items">
+          <div
+            class="banner_itemDog d-flex justify-content-start align-items-center"
+          >
+            <div class="container p-0">
+              <div class="itemdog_content">
+                <h5>
+                  Quality Things For <br />
+                  Loving Pets
+                </h5>
+                <p>Keeps your Pet Smiling</p>
+                <button class="read_more border rounded-3 py-3 px-5 active">
+                  Read More
+                </button>
+                <button class="contact_us border rounded-3 py-3 px-5">
+                  Contact Us
+                </button>
+              </div>
+            </div>
+
+            <div class="D-Flex_content"></div>
+          </div>
+          <div
+            class="banner_itemDog d-flex justify-content-center align-items-center flex-row-reverse banner_itemYoung"
+          >
+            <div class="itemdog_content">
+              <h5>
+                Delivering Happiness <br />
+                For Pets
+              </h5>
+              <p>For the love of pets</p>
+              <button class="read_more border rounded-3 py-3 px-5 active">
+                Read More
+              </button>
+              <button class="contact_us border rounded-3 py-3 px-5">
+                Contact Us
+              </button>
+            </div>
+            <div class="D-Flex_content"></div>
+          </div>
+          <div
+            class="banner_itemDog d-flex justify-content-around align-items-center"
+          >
+            <div class="itemdog_content">
+              <h5>
+                Quality Things For <br />
+                Loving Pets
+              </h5>
+              <p>Keeps your Pet Smiling</p>
+              <button class="read_more border rounded-3 py-3 px-5 active">
+                Read More
+              </button>
+              <button class="contact_us border rounded-3 py-3 px-5">
+                Contact Us
+              </button>
+            </div>
+            <div class="D-Flex_content"></div>
+          </div>
+          <div
+            class="banner_itemDog d-flex justify-content-around align-items-center flex-row-reverse"
+          >
+            <div class="itemdog_content">
+              <h5>
+                Delivering Happiness <br />
+                For Pets
+              </h5>
+              <button class="read_more border rounded-3 py-3 px-5 active">
+                Read More
+              </button>
+              <button class="contact_us border rounded-3 py-3 px-5">
+                Contact Us
+              </button>
+            </div>
+            <div class="D-Flex_content"></div>
+          </div>
+        </div>
       </section>
-      <section class="about"></section>
-      <section class="product"></section>
+
+      <section class="about">
+        <div class="container d-flex justify-content-center">
+          <div class="about_content text-center">
+            <h5>ABOUT US</h5>
+            <h3>We love your pets like they are our own</h3>
+            <p class="my-3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequuntur hic odio voluptatem tenetur consequatur. Vestibulum
+              ante ipsum primis in faucibus orci luctus et ultrices posuere
+              cubilia Curae; Nulla mollis dapibus nunc, ut rhoncus turpis
+              sodales quis.
+            </p>
+            <a href="#">Read More</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="product">
+        <div class="container text-center">
+          <div class="row row-cols-1 row-cols-sm-3 row-cols-md-4 gap-4">
+            <div class="col">
+              <i class="fa-solid fa-snowflake"></i>
+              <h3>Dog Walking</h3>
+              <p class="my-3">
+                Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet
+                laoreet. Lorem ipsum dolor sit amet Ut blandit eu leo..
+              </p>
+              <a href="#">Read More</a>
+            </div>
+            <div class="col">
+              <i class="fa-solid fa-utensils"></i>
+              <h3>Healthy Meals</h3>
+              <p class="my-3">
+                Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet
+                laoreet. Lorem ipsum dolor sit amet Ut blandit eu leo..
+              </p>
+              <a href="#">Read More</a>
+            </div>
+            <div class="col">
+              <i class="fa-solid fa-hands-clapping"></i>
+              <h3>Pet Sitting</h3>
+              <p class="my-3">
+                Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet
+                laoreet. Lorem ipsum dolor sit amet Ut blandit eu leo..
+              </p>
+              <a href="#">Read More</a>
+            </div>
+            <div class="col">
+              <i class="fa-solid fa-sitemap"></i>
+              <h3>Dog Activities</h3>
+              <p class="my-3">
+                Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet
+                laoreet. Lorem ipsum dolor sit amet Ut blandit eu leo..
+              </p>
+              <a href="#">Read More</a>
+            </div>
+            <div class="col">
+              <i class="fa-solid fa-shower"></i>
+              <h3>Pet Daycare</h3>
+              <p class="my-3">
+                Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet
+                laoreet. Lorem ipsum dolor sit amet Ut blandit eu leo..
+              </p>
+              <a href="#">Read More</a>
+            </div>
+            <div class="col">
+              <i class="fa-solid fa-user-doctor"></i>
+              <h3>Pet Grooming</h3>
+              <p class="my-3">
+                Vivamus a ligula quam. Ut blandit eu leo non. Duis sed doloramet
+                laoreet. Lorem ipsum dolor sit amet Ut blandit eu leo..
+              </p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="choose"></section>
       <section class="number"></section>
       <section class="ourplans"></section>
@@ -230,9 +381,12 @@
     <script>
       $(".multiple-items").slick({
         infinite: true,
-        arrows: true,
-        slidesToShow: 3,
-        slidesToScroll: 3,
+        arrows: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 1500,
       });
     </script>
     <!-- aos anitmate  -->

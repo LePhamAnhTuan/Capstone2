@@ -16,5 +16,6 @@ function sunOn() {
   document.getElementById("moonOn").classList.remove("display_none");
 }
 function darkBody() {
-  document.getElementById("myBody").classList.toggle("darkBody");
+  document.getElementById("myBody").classList.toggle("dark");
+  document.getElementById("myBody").classList.remove("bg-body");
 }
