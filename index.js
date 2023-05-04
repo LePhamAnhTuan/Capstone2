@@ -19,3 +19,9 @@ function darkBody() {
   document.getElementById("myBody").classList.toggle("dark");
   document.getElementById("myBody").classList.remove("bg-body");
 }
+function videoOn() {
+  document.getElementById("modal_2").classList.add("modal_display");
+}
+function videoOff() {
+  document.getElementById("modal_2").classList.remove("modal_display");
+}
